@@ -5,11 +5,12 @@ alert(Name + " is a very nice name");
 
 let happiness = prompt('are you happy?');
 console.log(happiness);
-
+let score=0
 switch (happiness.toUpperCase()) {
     case 'YES':
     case 'Y':
         alert('that\'s great !');
+        score++;
         break;
 
     case 'NO':
@@ -25,6 +26,7 @@ switch (end.toUpperCase()) {
     case 'YES':
     case 'Y':
         alert('then i guess you already prepared yourself!');
+        score++;
         break;
 
     case 'NO':
@@ -40,6 +42,7 @@ switch (hole.toUpperCase()) {
     case 'YES':
     case 'Y':
         alert('so you has to make youself not to drop into in');
+        score++;
         break;
 
     case 'NO':
@@ -54,6 +57,7 @@ switch (rich.toUpperCase()) {
     case 'YES':
     case 'Y':
         alert('so why you are here in the jordan!');
+        score++;
         break;
 
     case 'NO':
@@ -70,6 +74,7 @@ switch (lonely.toUpperCase()) {
     case 'YES':
     case 'Y':
         alert('that\'s better than to be with fake people');
+        score++;
         break;
 
     case 'NO':
@@ -90,9 +95,10 @@ for (let i = 0; i < 3; i++) {
     }
     else if (num == 11) {
         alert('you are right!')
+        score++;
         break;
     }
-    if (i == 3) {
+     else if (i == 3) {
         alert('my favorite number is 11');
     }
 }
@@ -102,20 +108,26 @@ for (let i = 0; i < 3; i++) {
 
 let show = prompt('can you guess  one of my best series ever?');
 
-let movie = ['friends', 'narcos', 'dexter', 'orghan black'];
+let movie = ['friends', 'narcos', 'dexter', 'orphan black'];
 
 for (let v = 0; v < 5; v++) {
     console.log(show);
     if (show.toLowerCase() === movie[0] || show.toLowerCase() === movie[1] || show.toLowerCase() === movie[2] || show.toLowerCase() === movie[3]) {
         alert('yes ' + show + ' is one of my top five series');
+        score++;
         break;
 
+    }
+    else if(v==4){
+        alert('my favorite movies are friends, narcos, dexter, orphan black ');
     }
     else {
         show = prompt('that\'s wrong try again');
     }
 
 }
+
+alert('your final score is '+score);
 
 
 
