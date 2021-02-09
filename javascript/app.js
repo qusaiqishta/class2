@@ -67,21 +67,55 @@ console.log(lonely);
 
 
 switch (lonely.toUpperCase()) {
-    case YES:
-    case Y:
+    case 'YES':
+    case 'Y':
         alert('that\'s better than to be with fake people');
         break;
 
-    case NO:
-    case N:
+    case 'NO':
+    case 'N':
         alert("okay!");
         break;
+}
+
+let num = prompt('can you guess what is my favorite number?');
+for (let i = 0; i < 3; i++) {
+
+
+    if (num > 11) {
+        num = prompt('you are too high , try to make the number smaller');
+    }
+    else if (num < 11) {
+        num = prompt('you are too low , try to make the number bigger');
+    }
+    else if (num == 11) {
+        alert('you are right!')
+        break;
+    }
+    if (i == 3) {
+        alert('my favorite number is 11');
+    }
 }
 
 
 
 
+let show = prompt('can you guess  one of my best series ever?');
 
+let movie = ['friends', 'narcos', 'dexter', 'orghan black'];
+
+for (let v = 0; v < 5; v++) {
+    console.log(show);
+    if (show.toLowerCase() === movie[0] || show.toLowerCase() === movie[1] || show.toLowerCase() === movie[2] || show.toLowerCase() === movie[3]) {
+        alert('yes ' + show + ' is one of my top five series');
+        break;
+
+    }
+    else {
+        show = prompt('that\'s wrong try again');
+    }
+
+}
 
 
 

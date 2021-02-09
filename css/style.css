@@ -4,6 +4,9 @@ header h1{
 }
 
 .pp{
-    border-style: solid ; padding: 20; color: blueviolet;
+    border: solid ; padding: 40; color: blueviolet;
 
 }
+ #mm{
+     border: solid blueviolet;
+ }
