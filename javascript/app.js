@@ -1,10 +1,14 @@
-
+let score=0;
 let Name = prompt('what\'s your name?');
 console.log(Name);
 alert(Name + " is a very nice name");
 
+function mood(){
 let happiness = prompt('are you happy?');
 console.log(happiness);
+
+
+=======
 let score = 0
 switch (happiness.toUpperCase()) {
     case 'YES':
@@ -18,7 +22,10 @@ switch (happiness.toUpperCase()) {
         alert("do what ever it takes to be happy , it\'s a very important thing");
         break;
 }
+}
+mood ();
 
+function anticipation () {
 let end = prompt('Do you know when it\'s going to be the end of the world? ');
 console.log(end);
 
@@ -34,7 +41,10 @@ switch (end.toUpperCase()) {
         alert("you have to be prepared as soon as possible because it\s very close");
         break;
 }
+}
+anticipation();
 
+function astrology () {
 let hole = prompt('Do yoy know what is the black hole?');
 console.log(hole);
 
@@ -50,7 +60,10 @@ switch (hole.toUpperCase()) {
         alert("it\'s a very dense energy hole that have the capacity to consume every thing even the light!");
         break;
 }
+}
+astrology();
 
+function economicStatus(){
 let rich = prompt('Do you think you are rich?');
 console.log(rich);
 switch (rich.toUpperCase()) {
@@ -65,7 +78,10 @@ switch (rich.toUpperCase()) {
         alert("i hope you be");
         break;
 }
+}
+economicStatus();
 
+function socialComunication(){
 let lonely = prompt('Do you feel lonely?');
 console.log(lonely);
 
@@ -82,7 +98,10 @@ switch (lonely.toUpperCase()) {
         alert("okay!");
         break;
 }
+}
+socialComunication();
 
+function favoritNumber (){
 let num = prompt('can you guess what is my favorite number?');
 for (let i = 0; i < 3; i++) {
 
@@ -102,9 +121,11 @@ for (let i = 0; i < 3; i++) {
         alert('my favorite number is 11');
     }
 }
+}
+favoritNumber();
 
 
-
+function favSeries () {
 
 let show = prompt('can you guess  one of my best series ever?');
 let correct = false;
@@ -125,9 +146,15 @@ for (let v = 0; v < 5; v++) {
         break;
     }
 }
+}
+favSeries();
 
 
 alert('your final score is ' + score);
+
+
+
+
 
 
 
