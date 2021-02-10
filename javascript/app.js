@@ -5,7 +5,7 @@ alert(Name + " is a very nice name");
 
 let happiness = prompt('are you happy?');
 console.log(happiness);
-let score=0
+let score = 0
 switch (happiness.toUpperCase()) {
     case 'YES':
     case 'Y':
@@ -98,7 +98,7 @@ for (let i = 0; i < 3; i++) {
         score++;
         break;
     }
-     else if (i == 3) {
+    else if (i == 3) {
         alert('my favorite number is 11');
     }
 }
@@ -107,27 +107,27 @@ for (let i = 0; i < 3; i++) {
 
 
 let show = prompt('can you guess  one of my best series ever?');
-
+let correct = false;
 let movie = ['friends', 'narcos', 'dexter', 'orphan black'];
 
 for (let v = 0; v < 5; v++) {
     console.log(show);
-    if (show.toLowerCase() === movie[0] || show.toLowerCase() === movie[1] || show.toLowerCase() === movie[2] || show.toLowerCase() === movie[3]) {
-        alert('yes ' + show + ' is one of my top five series');
-        score++;
+    for (let j = 0; j < movie.length; j++) {
+        if (show == movie[j]) {
+            alert('you are right')
+            correct = true;
+            score++;
+            break;
+        }
+
+    }
+    if(correct){
         break;
-
     }
-    else if(v==4){
-        alert('my favorite movies are friends, narcos, dexter, orphan black ');
-    }
-    else {
-        show = prompt('that\'s wrong try again');
-    }
-
 }
 
-alert('your final score is '+score);
+
+alert('your final score is ' + score);
 
 
 
