@@ -1,14 +1,13 @@
 let score=0;
 let Name = prompt('what\'s your name?');
-console.log(Name);
 alert(Name + " is a very nice name");
 
 function mood(){
 let happiness = prompt('are you happy?');
-console.log(happiness);
 
 
-=======
+
+
 let score = 0
 switch (happiness.toUpperCase()) {
     case 'YES':
@@ -27,7 +26,7 @@ mood ();
 
 function anticipation () {
 let end = prompt('Do you know when it\'s going to be the end of the world? ');
-console.log(end);
+
 
 switch (end.toUpperCase()) {
     case 'YES':
@@ -46,7 +45,7 @@ anticipation();
 
 function astrology () {
 let hole = prompt('Do yoy know what is the black hole?');
-console.log(hole);
+
 
 switch (hole.toUpperCase()) {
     case 'YES':
@@ -65,7 +64,7 @@ astrology();
 
 function economicStatus(){
 let rich = prompt('Do you think you are rich?');
-console.log(rich);
+
 switch (rich.toUpperCase()) {
     case 'YES':
     case 'Y':
@@ -83,7 +82,7 @@ economicStatus();
 
 function socialComunication(){
 let lonely = prompt('Do you feel lonely?');
-console.log(lonely);
+
 
 
 switch (lonely.toUpperCase()) {
@@ -132,7 +131,6 @@ let correct = false;
 let movie = ['friends', 'narcos', 'dexter', 'orphan black'];
 
 for (let v = 0; v < 5; v++) {
-    console.log(show);
     for (let j = 0; j < movie.length; j++) {
         if (show == movie[j]) {
             alert('you are right')

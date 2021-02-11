@@ -1,3 +1,8 @@
+*{
+    background-color:burlywood;
+}
+
+
 header h1{
     text-align: center;
     color: blueviolet;
@@ -5,8 +10,18 @@ header h1{
 
 .pp{
     border: solid ; padding: 40; color: blueviolet;
+    font-family: 'Oswald', sans-serif;
+    font-size: x-large;
+    
 
 }
  #mm{
      border: solid blueviolet;
+ }
+ 
+ ul li{
+     font-size: x-large;
+ }
+ #mm li{
+     font-size: x-large;
  }
