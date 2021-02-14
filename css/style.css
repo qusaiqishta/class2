@@ -15,9 +15,7 @@ header h1{
     
 
 }
- #mm{
-     border: solid blueviolet;
- }
+ 
  
  ul li{
      font-size: x-large;
@@ -25,3 +23,8 @@ header h1{
  #mm li{
      font-size: x-large;
  }
+
+ ul {
+     border:solid; color: blueviolet;
+ }
+ 

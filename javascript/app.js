@@ -2,7 +2,7 @@ let score=0;
 let Name = prompt('what\'s your name?');
 alert(Name + " is a very nice name");
 
-function mood(){
+function mood(){ 
 let happiness = prompt('are you happy?');
 
 
@@ -116,7 +116,7 @@ for (let i = 0; i < 3; i++) {
         score++;
         break;
     }
-    else if (i == 3) {
+     if (i == 2) {
         alert('my favorite number is 11');
     }
 }
@@ -126,33 +126,38 @@ favoritNumber();
 
 function favSeries () {
 
-let show = prompt('can you guess  one of my best series ever?');
 let correct = false;
 let movie = ['friends', 'narcos', 'dexter', 'orphan black'];
 
-for (let v = 0; v < 5; v++) {
+for (let v = 0; v < 6; v++) {
+    let show = prompt('can you guess one of my best series ever?');
+
     for (let j = 0; j < movie.length; j++) {
         if (show == movie[j]) {
             alert('you are right')
             correct = true;
             score++;
             break;
-        }
+        }}
 
-    }
+    
     if(correct){
         break;
+    }   
+    
+    if(v==5){
+        alert('my favorite movies are '+movie);
     }
+     
+        
+       
 }
 }
 favSeries();
 
 
+
 alert('your final score is ' + score);
-
-
-
-
 
 
 
